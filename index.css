@@ -1,0 +1,508 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Jura:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: 'roboto';
+}
+
+header {
+    background-color: rgba(193, 165, 92, 0.4);
+    height: 100px;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+header img {
+    padding: 20px;
+
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding-right: 20px;
+    gap: 35px;
+}
+
+.nav-item {
+    margin: 0 10px;
+}
+
+.nav-link {
+    color: black;
+    text-decoration: none;
+}
+
+.hamburguer {
+    display: none;
+    padding-right: 20px;
+    font-size: 26px;
+    cursor: pointer;
+    color: black;
+}
+
+@media (max-width: 850px) {
+    .hamburguer {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100px;
+        right: 0;
+        width: 200px;
+        background-color: white;
+        border: 1px solid #ccc;
+        padding: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        z-index: 100;
+    }
+
+    .nav-item {
+        margin: 8px 0;
+    }
+}
+
+
+/* Fim navBar - inicio Corpo */
+
+
+#hero {
+    height: 400px;
+}
+
+#hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+#corpo1 {
+    display: flex;
+    height: 500px;
+    overflow: hidden;
+}
+
+#corpo1 img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: contain;
+    border-radius: 10px;
+    max-height: 400px;
+    /* Define uma altura máxima consistente */
+    margin: 0 auto;
+    /* Centraliza a imagem horizontalmente */
+}
+
+
+.quadrados {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    width: 50%;
+    text-align: justify;
+}
+
+.quadrados p {
+    padding: 10%;
+    font-size: clamp(14px, 1.5vw, 18px);
+}
+
+@media (max-width: 768px) {
+
+    #corpo1 {
+        flex-direction: column;
+        height: 700px;
+    }
+
+    .quadrados {
+        width: 100%;
+        height: 50%;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    #corpo1 img {
+        max-height: 350px;
+        /* Altura máxima um pouco menor em telas menores */
+        padding-bottom: 20px;
+    }
+}
+
+
+#corpo2 {
+    display: flex;
+    height: 500px;
+    overflow: hidden;
+    flex-direction: row-reverse;
+}
+
+#corpo2 img {
+
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: contain;
+    border-radius: 10px;
+    max-height: 400px;
+    /* Define uma altura máxima consistente */
+    margin: 0 auto;
+    /* Centraliza a imagem horizontalmente */
+}
+
+
+@media (max-width: 768px) {
+
+    #corpo2 {
+        flex-direction: column;
+        height: 800px;
+    }
+
+    .quadrados {
+        width: 100%;
+        height: 50%;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    #corpo2 img {
+
+        max-height: 350px;
+        /* Altura máxima um pouco menor em telas menores */
+        padding-bottom: 20px;
+    }
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+body {
+    background-color: #f9f0ee;
+    color: #333;
+}
+
+.testimonials-section {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 40px;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+    display: inline-block;
+}
+
+.section-title::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 3px;
+    background-color: #d8aba0;
+    margin: 10px auto 0;
+}
+
+.testimonials-container {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    min-height: 420px;
+}
+
+.testimonial-slide {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.testimonial {
+    flex: 0 0 25%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0.7;
+    transition: opacity 0.5s ease, transform 0.3s ease;
+}
+
+.testimonial.active {
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+.testimonial-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.testimonial-name {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.testimonial-text {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #555;
+    text-align: center;
+    margin-top: 15px;
+    height: 200px;
+    overflow: hidden;
+}
+
+.nav-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.nav-button {
+    background-color: transparent;
+    border: none;
+    font-size: 2rem;
+    color: #d8aba0;
+    cursor: pointer;
+    margin: 0 15px;
+    transition: color 0.3s ease;
+}
+
+.nav-button:hover {
+    color: #b27b6e;
+}
+
+.nav-dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #ddd;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.dot.active {
+    background-color: #d8aba0;
+}
+
+@media (max-width: 1024px) {
+    .testimonial {
+        flex: 0 0 33.333%;
+    }
+}
+
+@media (max-width: 768px) {
+    .testimonial {
+        flex: 0 0 50%;
+    }
+}
+
+@media (max-width: 480px) {
+    .testimonial {
+        flex: 0 0 100%;
+    }
+
+    .testimonial-image {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Fim Corpo - inicio Footer */
+
+
+
+footer {
+    background-color: #e6e6e6;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+
+}
+
+#row {
+    display: flex;
+    min-height: 80%;
+
+}
+
+#rowEsquerda {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10px;
+    text-transform: uppercase;
+}
+
+#rowMeio {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    text-transform: uppercase;
+    padding: 10px;
+}
+
+#rowMeio p {
+    margin-bottom: 0;
+}
+
+
+#rowDireita {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-right: 10px;
+}
+
+#rowDireita p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#rowDireita ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin-bottom: 0;
+    padding-left: 0;
+    gap: 10px;
+}
+
+#copyRight {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    height: 20%;
+    padding-bottom: 10px;
+}
+
+@media (max-width: 875px) {
+
+    #rowEsquerda {
+        font-size: 10px;
+    }
+
+    #rowMeio {
+        font-size: 13px;
+    }
+
+    #rowDireita {
+        font-size: 10px;
+    }
+
+    #rowDireita img {
+        width: 50px;
+        height: 50px;
+    }
+
+    #copyRight {
+        font-size: 10px;
+    }
+
+}
+
+@media (max-width: 755px) {
+    #rowEsquerda {
+        font-size: 9px;
+    }
+
+    #rowMeio {
+        font-size: 11px;
+    }
+
+    #rowDireita {
+        font-size: 9px;
+    }
+
+    #rowDireita img {
+        width: 40px;
+        height: 40px;
+    }
+
+    #copyRight {
+        font-size: 9px;
+    }
+}
+
+@media (max-width: 650px) {
+    #rowEsquerda {
+        font-size: 8px;
+    }
+
+    #rowMeio {
+        font-size: 10px;
+    }
+
+    #rowDireita {
+        font-size: 8px;
+    }
+
+    #rowDireita img {
+        width: 30px;
+        height: 30px;
+    }
+
+    #copyRight {
+        font-size: 8px;
+    }
+
+}
