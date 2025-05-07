@@ -1,3 +1,0 @@
-# Trabalho_Web
-
-agkaslhçgasçgaslçgmas~
