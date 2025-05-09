@@ -118,7 +118,6 @@ header img {
     display: block;
 }
 
-
 #corpo1,
 #corpo2 {
     display: flex;
@@ -132,8 +131,6 @@ header img {
     transition: all 0.5s ease;
     position: relative;
 }
-
-
 
 #corpo1:hover,
 #corpo2:hover {
@@ -173,8 +170,6 @@ header img {
     letter-spacing: 0.5px;
 }
 
-
-
 .imagem {
     width: 100%;
     height: 100%;
@@ -207,7 +202,6 @@ header img {
 #corpo2 img:hover {
     transform: scale(1.05) rotate(0);
 }
-
 
 .imagem::after {
     content: '';
@@ -434,6 +428,7 @@ body {
     background-color: #d8aba0;
 }
 
+/* Media querie Testemunhos */
 
 @media (max-width: 1024px) {
     .testimonial {
@@ -535,8 +530,6 @@ body {
 /* FIM CSS DO CARROSSEL */
 
 
-
-
 /* INÍCIO CSS DO FOOTER */
 
 
@@ -548,6 +541,8 @@ footer {
     flex-direction: column;
     width: 100%;
     margin-bottom: 0;
+    color: #d8a48f;
+    ;
 }
 
 .row {
@@ -620,6 +615,7 @@ footer {
     height: 20%;
     padding-bottom: 10px;
     font-family: "Roboto Flex", sans-serif;
+    color: #a3b18a;
 }
 
 
