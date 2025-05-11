@@ -80,3 +80,88 @@ Apesar das dificuldades iniciais, este projeto ajudou-nos no que toca a apreende
 Maio de 2025
 
 
+
+------------------------EN---------------------
+
+
+# FOTIANIS
+
+Project developed for the Web Programming course.  
+This project consisted of creating a website for a fictional photography company. The goal was to build a website from scratch with a functional and responsive interface for the web.
+
+---
+
+## Description
+
+The website simulates a photography company, designed to create a place where clients can access the company’s contact information, as well as services and prices. We focused on wedding, baptism, and family services as a marketing strategy.
+
+---
+
+## Experience and Challenges
+
+This was our first group project focused on website development, and as such, we faced some challenges — especially with the initial design and responsiveness. However, with the concepts learned in class and teamwork, we managed to achieve our goal.
+
+We learned a lot about HTML, CSS, and also best practices like keeping code clean and organized.
+
+---
+
+## Project Structure
+
+The website is divided into several pages:
+
+- **Home Page** (`index.html`)
+- **Services** (`serviços.html`)
+- **Portfolio** (`Portfolio.html`)
+- **Blog** (`blog.html`)
+- **Contacts** (`contactos.html`)
+
+On the **Home Page**, there is a responsive navbar with the logo and access to all other pages. Each section of the page guides the user to different parts of the website. At the bottom, there is a **footer** with external links and social media.
+
+---
+
+## Technologies Used
+
+- **HTML** – Page structure  
+- **CSS** – Style and layout  
+- **JavaScript** – Used for creating some animations  
+- **Bootstrap 5** – Framework for responsiveness  
+- **Google Fonts** – For custom typography  
+- **Visual Studio Code** – Code editor used  
+- **CodePen** – Source of creative ideas for the website  
+- **Figma** – Used to design the layout and structure  
+- **Notion** – Used to divide tasks and organize work  
+
+---
+
+## Responsiveness
+
+The site adapts to different screen sizes (desktop, tablet, and mobile) using Flexbox, media queries, and Bootstrap.
+
+---
+
+## Extra Features
+
+- The logo on the Home Page was entirely created by us.  
+- We kept the elastic scroll (bounce) effect on iOS, as it adds a modern touch.  
+- Most of the images on our website were created using AI for privacy and copyright reasons.  
+- On the Blog page, we decided to keep the page under construction.  
+- We added alert messages for form submissions.  
+
+---
+
+## Conclusions
+
+This project allowed me to consolidate fundamental knowledge of HTML and CSS, as well as explore new tools and frameworks like Bootstrap and CodePen. We gained a better understanding of how everything works together in web development.
+
+Despite the initial difficulties, this project helped us learn how to work in a team and reinforced some core concepts we had previously learned.
+
+---
+
+## Developed by
+
+**Ana Neves**  
+**Luís Marante**  
+**Tiago Morgado**  
+May 2025
+
+
